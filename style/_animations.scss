@@ -1,0 +1,84 @@
+//animate invite modal
+.animateModal{
+  animation: fadein .4s ease-in;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+// question animate forward
+.moveForward-appear {
+  opacity: 0.01;
+}
+
+.moveForward-appear.moveForward-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.moveForward-enter {
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translateX(150%);
+	transform: translateX(150%);
+}
+
+.moveForward-enter.moveForward-enter-active {
+	position: absolute;
+	opacity: 1;
+	width: 100%;
+  -webkit-transform: translateX(0);
+	transform: translateX(0);
+  	transition: all 400ms ease-in-out;
+  	-webkit-transition-delay: .15s;
+  	transition-delay: .15s;
+}
+
+.moveForward-leave {
+	position: absolute;
+  	opacity: 1;
+  	width: 100%;
+}
+
+.moveForward-leave.moveForward-leave-active {
+	position: absolute;
+  	opacity: 0;
+  	width: 100%;
+  	transition: all 200ms ease-in;
+}
+
+
+// question animate backward
+.moveBackward-enter {
+	position: absolute;
+  	opacity: 0;
+  	width: 100%;
+}
+
+.moveBackward-enter.moveBackward-enter-active {
+	position: absolute;
+  	opacity: 1;
+  	width: 100%;
+  	transition: all 300ms ease-in;
+}
+
+.moveBackward-leave {
+	position: absolute;
+	opacity: 1;
+  	width: 100%;
+    -webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.moveBackward-leave.moveBackward-leave-active {
+	opacity: 0;
+  	width: 100%;
+	-webkit-transform: translateX(150%);
+	transform: translateX(150%);
+	position: absolute;
+  	transition: all 400ms ease-in-out;
+}

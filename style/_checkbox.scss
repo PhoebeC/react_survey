@@ -1,0 +1,77 @@
+//checkboxes
+.checkbox{
+  margin-bottom: 3em;
+
+   //iphone 5
+    @media (max-width: 350px) {
+      margin-bottom: 1.5em;
+    }
+
+  label{
+    padding-left: 0;
+  }
+}
+
+.checkbox__option {
+  input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+
+    + .checkbox__label {
+        margin: 0 0 0 .2em;
+        line-height: 1.3em;
+        font-size: 1em;
+        color: darken($dark-grey, 10%);
+
+      &:before {
+        content: '';
+        background: $light-grey;
+        border-radius: 3px;
+        border: 1px solid $primary-color;
+        display: inline-block;
+        width: 1.7em;
+        height: 1.6em;
+        position: relative;
+        top: .1em;
+        margin: 0 1em 2.5em 0;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+        float: left;
+      }
+    }
+    &:checked {
+      + .checkbox__label {
+        &:before {
+          background-color: $primary-color;
+          box-shadow: inset 0 0 0 4px $light-grey;
+        }
+      }
+    }
+    &:focus {
+      + .checkbox__label {
+        &:before {
+          outline: none;
+          border-color: $primary-color;
+        }
+      }
+    }
+    &:disabled {
+      + .checkbox__label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $light-grey;
+          border-color: darken($light-grey, 25%);
+          background: darken($light-grey, 25%);
+        }
+      }
+    }
+    + .checkbox__label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

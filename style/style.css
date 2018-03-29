@@ -1,0 +1,39 @@
+/*simulate overlay*/
+body, html {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.clicked{
+	width: 100vw;
+	height: 100vh;
+
+	 -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+
+	 -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+}
+
+@keyframes animate-in {
+	0% { left: 100vw; }
+	100% { left: 0; }
+}
+
+.animate-in{
+	position: relative;
+	animation: animate-in .35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

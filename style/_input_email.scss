@@ -1,0 +1,23 @@
+// email styles
+
+.email {
+    margin: 1.8em 0 2em;
+
+     //iphone 5
+    @media (max-width: 350px) {
+    	margin-top: 1em;
+    }
+
+	input[type='email'] {
+	    width: 100%;
+	    border: 2px solid $primary-color;
+        padding: .6em .5em .7em;
+	    font-size: 1.2em;
+	    border-radius: 3px;
+	}
+}
+
+.email__label{
+	font-size: 0.85em;
+    margin-bottom: .2em;
+}

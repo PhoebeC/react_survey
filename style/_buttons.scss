@@ -1,0 +1,63 @@
+a, button{
+    cursor: pointer;
+}
+
+.button-primary{
+    padding: 1em 2em;
+    color: #fff;
+    background: $primary-color;
+    text-align: center;
+    border: 0 none;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+
+    &:hover, &:focus{
+        color: #fff;
+    }
+}
+
+.nav-back{
+	color: $primary-color;
+	position: absolute;
+    top: 1.7em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.button-split-invite{
+    background: $invite-primary;
+    border-radius: 45px;
+    padding: 1em 3em;
+    text-transform: uppercase;
+
+    &:hover, &:focus{
+        color: #fff;
+    }
+}
+
+.button-split-invite-text{
+    position: relative;
+    top: 1em;
+}
+
+.button-text{
+    background: none;
+    outline: none;
+    border: 0 none;
+    text-decoration: underline;
+}
+
+.button-group-vert{
+    position: relative;
+    top: 3.9em;
+}
+
+.button-close{
+    float: right;
+    text-decoration: none;
+    font-size: 2.4em;
+    font-weight: 100;
+    padding: 0.1em 0.7em;
+}

@@ -1,0 +1,23 @@
+html, body, {
+	height: 100%;
+}
+
+body{
+	color: $dark-grey;
+	overflow-x: hidden;
+}
+
+.white{
+	color: #fff;
+}
+
+.container{
+	//small desktop browsers
+	@media (min-width: 992px){
+    	max-width: 720px;
+    }
+
+    @media (min-width: 1200px) {
+    	max-width: 900px;
+    }
+}

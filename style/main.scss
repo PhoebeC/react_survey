@@ -1,0 +1,21 @@
+//colors and general styles
+@import "/variables";
+@import "/base";
+
+//general components
+@import "/buttons";
+
+@import "/animations";
+
+@import "/progress-bar";
+
+//pages
+@import "/surveyContainer";
+@import "/invite";
+@import "/survey";
+
+//form components
+@import "/radio_vert";
+@import "/radio_horz";
+@import "/checkbox";
+@import "/input_email";

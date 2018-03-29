@@ -1,0 +1,74 @@
+/*survey styles*/
+
+.survey-background{
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.survey-form{
+	position: relative;
+}
+
+.survey-question{
+	color: darken($dark-grey, 15%);
+	font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin: 2.2em 0 0;
+
+    //extra small phones
+    @media (max-width: 350px) {
+    	margin: 1.2em 0 0;
+    	font-size: 1.4em;
+    }
+
+    //large desktop browsers
+    @media (min-width: 1200px) {
+        margin: 2.5em 0 3em;
+    }
+
+    &:empty{
+    	margin: 0;
+    }
+
+    &.chooseOne-question{
+    	margin-top: 1.5em;
+
+        //large desktop browsers
+        @media (min-width: 1200px) {
+            margin: 2.2em 0;
+        }
+    }
+}
+
+
+.survey-logo{
+	width: 9em;
+	padding: 2em 0 1.5em;
+
+	//extra small phones
+    @media (max-width: 350px) {
+    	padding: 1.5em 0 1em;
+    }
+    //tablet
+    @media (min-width: 768px) and (max-width: 1024px){
+    	width: 12em;
+    	padding: 2.5em 0 3em;
+    }
+
+    //small desktop browsers
+	@media (min-width: 992px){
+    	width: 11em;
+    	padding: 2em 0;
+    }
+}
+
+.survey-helper-text{
+	margin: 1.5em 0 1em;
+
+	//tablets
+	@media (min-width: 768px) and (max-width: 1024px){
+    	font-size: 1.2em;
+    }
+}
